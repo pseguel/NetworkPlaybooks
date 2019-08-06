@@ -7,17 +7,17 @@
 # ANCHO_BANDA: N100, N10m etc
 
 ---
-name: Configurar descriptor interfaces
-hosts: all
+- name: Configurar descriptor interfaces
+  hosts: all
 
-vars:
-  prefijo: "Entel "
+  vars:
+    prefijo: "Entel "
   
-vars_files:
-  - entel_vars.yml
+  vars_files:
+    - entel_vars.yml
 
-tasks:
+  tasks:
   - name: Cambiar descriptor
     iosxr_interface:
-      name: {{ interface_name }}
-      description: {{ descriptor_interfaz }}
+      name: "{{ interface_name }}"
+      description: "{{ descriptor_interfaz }}"
