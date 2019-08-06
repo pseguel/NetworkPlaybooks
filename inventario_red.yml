@@ -1,0 +1,9 @@
+---
+name: Crear inventario de interfaces
+hosts: all
+
+tasks:
+  - name: Recolectar Interfaces
+    iosxr_facts:
+      gather_subset:
+      - ansible_net_interfaces

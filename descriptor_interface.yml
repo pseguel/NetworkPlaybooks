@@ -1,0 +1,23 @@
+# Formato de descriptor de interfaz:
+# {TIPO_INTF}_{EQUIPO_REMOTO}_{ID_IF}_{ANCHO_BANDA}
+#
+# TIPO_INTF: NNI, UNI
+# EQUIPO_REMOTO
+# ID_IF: Identificador Interfaz equipo remoto
+# ANCHO_BANDA: N100, N10m etc
+
+---
+name: Configurar descriptor interfaces
+hosts: all
+
+vars:
+  prefijo: "Entel "
+  
+vars_files:
+  - entel_vars.yml
+
+tasks:
+  - name: Cambiar descriptor
+    iosxr_interface:
+      name: {{ interface_name }}
+      description: {{ descriptor_interfaz }}
