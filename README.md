@@ -60,4 +60,10 @@ Validar que la llave está importada:
 
 	show crypto key authentication rsa
 	
+## Ejecución de Playbooks
+
+### Pruebas
+
+Pendiente.
+
 
