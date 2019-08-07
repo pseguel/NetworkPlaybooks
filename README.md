@@ -8,4 +8,6 @@ requisitos.
 
 ### IOS-XR
 
+#### Verificar que instalacion de paquete k9 security 
+
  
