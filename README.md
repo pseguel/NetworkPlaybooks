@@ -8,7 +8,7 @@ requisitos.
 
 ### IOS-XR
 
-#### Verificar que instalacion de paquete k9 security 
+#### Verificar que instalación de paquetes k9 security 
 
 
 Usar `show install active` y buscar paquetes "k9".
